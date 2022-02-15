@@ -1,11 +1,10 @@
 import React from 'react'
-import './CreateNewAction.scss'
+import './ActionForm.scss'
 import {useState} from 'react';
 import {PaperClipOutlined} from '@ant-design/icons';
-import AttachFile from './AttachFile';
 
 
-export default function CreateNewAction() {
+export default function ActionForm() {
     const [showActionForm,setShowActionForm]=useState(false)
     const [showUserRequestIssue,setShowUserRequestIssue]=useState(false)
     const [showProduceRequestIssue,setShowProduceRequestIssue]=useState(false)
@@ -167,7 +166,7 @@ export default function CreateNewAction() {
             {showActionForm && (<div className='action-form'>
                 
                     <label>
-                    <span className="category" >Category</span>
+                    <span className="category" >Category:</span>
                     
                 
                     <select className="category-select" onChange={handleCategory} defaultValue="select">
@@ -181,7 +180,7 @@ export default function CreateNewAction() {
                 
                 {showUserRequestIssue && (<div className='request-issue'>
                     <label>
-                        <span className="req-issue">Request/Issue</span>
+                        <span className="req-issue">Request/Issue:</span>
                         <select className="req-issue-select" onChange={handleUser} defaultValue="select">
                             <option value="select">select</option>
                             <option value="addUser">Add User</option>
@@ -195,7 +194,7 @@ export default function CreateNewAction() {
                 )}
                 {showProduceRequestIssue && (<div className='request-issue'>
                     <label>
-                        <span className="req-issue">Request/Issue</span>
+                        <span className="req-issue">Request/Issue:</span>
                          <select className="req-issue-select" onChange={handleProduce} defaultValue="select">
                             <option value="select">select</option>
                             <option value="addProduce">Add Produce</option>
@@ -207,10 +206,10 @@ export default function CreateNewAction() {
                 )}
                 {showAddUser && (<div className='add-user'>
                     <label>
-                       <span className="details"> Details</span>
-                        <textarea className="details-textarea"/* defaultValue="Please add following seller and buyers" */ />
+                       <span className="details"> Details:</span>
+                        <textarea className="details-textarea"defaultValue="Please add following seller and buyers" />
                         <br /><br /><br />
-                        <div className="file-attach"><AttachFile /></div>
+                        <button className="attach-file"> <PaperClipOutlined />Attach file </button>
                     </label>
                     <div className="create">
                         <br /><br />
@@ -220,13 +219,13 @@ export default function CreateNewAction() {
                 )}
                 {showLogin && (<div className='Login'>
                 <label>
-                        <span className="seller-buyer-id">Seller/buyer id</span>
+                        <span className="seller-buyer-id">Seller/buyer id:</span>
                         <input className="seller-buyer-text" type="text"/>
                     </label>
                     <br /> <br />
                     <label>
-                        <span className="seller-buyer-details">Details:</span>
-                        <textarea className="seller-buyer-details-textarea" /* defaultValue="Seller unable to login.Please change password" *//>
+                        <span className="details">Details:</span>
+                        <textarea className="details-textarea" defaultValue="Seller unable to login.Please change password"/>
                     </label>
                     <div className="create">
                     {<button type="submit" onClick={handleCreate}> Create</button>}
@@ -241,8 +240,8 @@ export default function CreateNewAction() {
                     </label>
                     <br /> <br />
                     <label>
-                        <span className="seller-buyer-details">Details:</span>
-                        <textarea className="seller-buyer-details-textarea"/*  defaultValue="Change Phone number to:" *//>
+                        <span className="details">Details:</span>
+                        <textarea className="details-textarea" defaultValue="Change Phone number to:"/>
                     </label>
                     <div className="create">
                     {<button type="submit" onClick={handleCreate}> Create</button>}
@@ -257,11 +256,10 @@ export default function CreateNewAction() {
                     </label>
                   <br /><br />
                   <label>
-                      <span className="seller-buyer-details">Details:</span>
-                      <textarea className="seller-buyer-details-textarea" /* defaultValue="Change bank account no to:" *//>
+                      <span className="details">Details:</span>
+                      <textarea className="details-textarea" defaultValue="Change bank account no to:"/>
                   <br /><br /><br />
-                  <div className="update-bank-info-attach-file"><AttachFile /></div>
-                  {/* <button className="update-bank-info-attach-file"> <PaperClipOutlined />Attach file </button> */}
+                  <button className="attach-file"> <PaperClipOutlined />Attach file </button>
                   </label>
                   
                   <div className="create">
@@ -278,11 +276,10 @@ export default function CreateNewAction() {
                     </label>  
                     <br /><br /> 
                     <label>
-                        <span className="seller-buyer-details" >Details:</span>
-                        <textarea className="seller-buyer-details-textarea"/* defaultValue="Add following produce to above seller" *//>
+                        <span className="details" >Details:</span>
+                        <textarea className="details-textarea"defaultValue="Add following produce to above seller"/>
                         <br /><br /><br />
-                        <div className="update-bank-info-attach-file"><AttachFile /></div>
-                        {/* <button className="update-bank-info-attach-file"> <PaperClipOutlined />Attach file </button> */}
+                        <button className="attach-file"> <PaperClipOutlined />Attach file </button>
                     </label><br /><br />
                     <div className="create">
                     {<button type="submit" onClick={handleCreate}> Create</button>}
@@ -298,8 +295,8 @@ export default function CreateNewAction() {
                     </label> 
                     <br /><br />  
                     <label>
-                        <span className="seller-buyer-details">Details:</span>
-                        <textarea className="seller-buyer-details-textarea" /* defaultValue="Crop: Change quantity to:" *//>
+                        <span className="details">Details:</span>
+                        <textarea className="details-textarea" defaultValue="Crop: Change quantity to:"/>
                     </label>
                     <div className="create">
                     {<button type="submit" onClick={handleCreate}> Create</button>}
@@ -313,8 +310,8 @@ export default function CreateNewAction() {
                     </label> 
                     <br /> <br />
                     <label>
-                        <span className="seller-buyer-details">Details:</span>
-                        <textarea className="seller-buyer-details-textarea"/* defaultValue="Delete the following produce" *//>
+                        <span className="details">Details:</span>
+                        <textarea className="details-textarea"defaultValue="Delete the following produce"/>
                     </label>
                     <div className="create">
                     {<button type="submit" onClick={handleCreate}> Create</button>}

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+//create new action button
+.action-button{
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    left: 61px;
+    top: 30px;
+   
+    
+    background: #6F6B6B;
+    border-radius: 3px;
+    color:#FFFFFF;
+    font-family: Roboto;
+    cursor:pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140.62%;
+}
+
+//form div 
+.action-form{
+    position: absolute;
+    width: 1320px;
+    height: 335px;
+    left: 61px;
+    top: 80px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #12805C;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    padding-left:30px;
+    padding-top:40px;
+    padding-bottom:30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px !important;
+    line-height: 140.62%;
+}
+
+//for category input
+.category{
+    position:absolute;
+    left:30px;
+    top:30px;
+}
+.category-select{
+    position:absolute;
+    top:25px;
+}
+.category + .category-select{
+    margin-left:130px;
+    text-align:left;
+}
+
+//for request/issue input
+.req-issue{
+    position:absolute;
+    top:70px;
+    left:30px;
+}  
+
+.req-issue-select{
+    position:absolute;
+    top:65px;
+}
+
+.req-issue + .req-issue-select{
+    margin-left:130px;
+    text-align:left;
+    
+}
+    
+//add user 
+.details{
+    position:absolute;
+    left:30px;
+    top:110px;
+} 
+
+.details-textarea{
+    position:absolute;
+    top:106px;
+}
+
+.details + .details-textarea{
+    margin-left:130px;
+    text-align:left;
+
+    
+}
+
+/* .attach-file{
+    
+    position:absolute;
+    left:171px;
+    top:229px;
+    
+}
+ */
+ .file-attach{
+    position:absolute;
+    left:171px;
+    top:170px;
+ }
+//login same for change-phone-number, update-bank-info
+.seller-buyer-id{
+    position:absolute;
+    left:30px;
+    top:110px;
+}
+.seller-buyer-text{
+    position:absolute;
+    top:106px;
+
+}
+
+.seller-buyer-id + .seller-buyer-text{
+    margin-left:-50px;
+    text-align:left;
+
+}
+
+.seller-buyer-details{
+    position:absolute;
+    left:30px;
+    top:152px;
+}
+
+.seller-buyer-details-textarea{
+    position:absolute;
+    top:147px;
+}
+
+.seller-buyer-details + .seller-buyer-details-textarea{
+    margin-left:130px;
+    text-align:left;
+
+}
+
+//update bank info attach file
+.update-bank-info-attach-file{
+    position:absolute;
+    left:171px;
+    top:210px;
+}
+
+select {
+width: 205px;
+height: 34px;
+/* margin:5px 0; */
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 5px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140.62%;
+}
+label {
+    
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140.62%;
+
+
+margin:10px;
+left:10px;
+color: #000000;
+}
+
+
+
+
+
+textarea{
+width: 369px;
+height: 69px;
+
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 5px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140.62%;
+}
+
+button[type=submit]{
+    
+position: absolute;
+width: 71px;
+height: 40px;
+left: 90px;
+bottom:26px;
+/* top: 268px; */
+
+background: #12805C;
+border-radius: 3px;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140.62%;
+/* identical to box height, or 20px */
+cursor:pointer;
+
+
+color: #FFFFFF;
+
+}
+
+
+
+.cancel{
+    /* Cancel */
+
+
+position: absolute;
+width: 43px;
+height: 20px;
+left: 30px;
+bottom:36px;
+/* top: 278px; */
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140.62%;
+/* identical to box height, or 20px */
+
+cursor:pointer;
+color: #C4C4C4;
+}
+
+input[type=text]{
+    
+position: absolute;
+width: 205px;
+height: 34px;
+left:220px;
+
+background: #FFFFFF;
+border: 1px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 5px;
+}
+input[type=file]{
+    width: 131px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #4285F4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color:#4285F4;
+    font-family:Roboto;
+    font-size:14px;   
+}

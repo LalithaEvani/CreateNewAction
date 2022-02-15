@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.produce-list-backdrop{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+
+}
+
+.produce-list{
+    padding: 20px;
+    width: 1178px;
+   
+    margin-left:180px;
+    margin-top:140px;
+    
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.cancel{
+    position: absolute;
+    top:16px;
+    right:20px;
+    
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+.seller-info{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 140.62%;
+color: #000000;
+}
+
+.done{
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140.62%;
+    /* identical to box height, or 22px */
+
+    text-align: center;
+
+    color: #4285F4;
+    cursor:pointer;
+
+}
+.done-close{
+    text-align: center;
+}
+
+

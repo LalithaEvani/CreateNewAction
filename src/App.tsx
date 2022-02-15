@@ -1,12 +1,12 @@
 import React from 'react';
-import CreateNewAction from './components/CreateNewAction';
-/* import logo from './logo.svg';
-import './App.css'; */
+
+import ProduceList from './components/ProduceList';
+
 
 function App() {
   return (
     <div className="App">
-        <CreateNewAction />
+      <ProduceList />
        </div>
   );
 }

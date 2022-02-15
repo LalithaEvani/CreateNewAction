@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+width: 0px;
+}
+
+.ant-table-thead > tr > th {
+    background: #F2F2F2;
+
+}
+ 
+
+a{
+    color:black;
+    text-decoration-line: underline;
+}
+
+progress {
+    border-radius: 20px; 
+    width: 100px;
+    height: 12px;/* 
+    margin-left: -11.5%; *//* 
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 ); */
+  }
+  progress::-webkit-progress-bar {
+    background: #EBEBEB;
+    border-radius: 20px;
+  }
+  progress::-webkit-progress-value {
+    background: #12805C;
+    border-radius: 20px;
+  }
+  
+  
+  .quanRem-total{
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 140.62%;
+/* identical to box height, or 20px */
+
+
+color: #888888;
+  }
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td {
+    position: relative;
+    /* padding: 20px 27px; */
+    overflow-wrap: break-word;
+}
+
+.ant-table-tbody > tr{
+  height:117px;
+  
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+.ant-table-measure-row
+{
+  min-height:0px !important;
+  display:none;
+}
+/* row data */
+tbody > tr > td {
+  height: 74px !important;
+  padding: 2px 2px 2px 2px !important;
+}
+tbody > tr > td >p {
+  height: 20px !important;
+  padding: 0px 0px 0px 0px !important;
+}
+tr > td .ant-table-cell 
+{
+  height: 84px !important;
+  padding: 0px; 
+}
+.ant-table
+{
+  font-family: Roboto !important;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 16px !important;
+line-height: 140.62% !important;
+}
+
+.ant-table-thead .ant-table-cell
+{
+background: #F2F2F2 !important;
+font-family: Roboto !important;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 14px !important;
+line-height: 140.62% !important;
+border-radius: 2px 2px 0px 0px!important;
+height:40px !important;
+
+}
+
